@@ -1,5 +1,9 @@
 function stringChop(str, size) {
   // your code here
+	if(!str){
+		return[];
+	}
+	
 	let ar=[];
 	for (let i = 0; i < str.length; i=i+size) {
 		let chunk=str.slice(i,i+size);
