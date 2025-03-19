@@ -3,14 +3,12 @@ function stringChop(str, size) {
 	if(!str){
 		return[];
 	}
-	
-	let ar=[];
-	for (let i = 0; i < str.length; i=i+size) {
-		let chunk=str.slice(i,i+size);
-		ar.push(chunk);
+	let chunk= [];
+	for (let i =0;i<str.length; i=i+size) {
+		chunk.push(str.slice(i, i+size))
 	}
-	return ar;
-}
+	return chunk;
+}	
 // Do not change the code below
 const str=prompt("Enter String.");
 const size =Number(prompt("Enter Chunk Size."));
